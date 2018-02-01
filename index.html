@@ -7,9 +7,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+<!-- 				<link rel="stylesheet" type="text/css" href="assets/css/demo1.css" />
+ -->
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style1.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/elastislide1.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+		<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+
 		<script src="assets/js/modernizr.custom.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -304,45 +339,61 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					</section>
 
 				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+					<section id="about" class="three" style="background-size:cover;background-image:url(images/p1.jpg)">
+						<div class="container" style="display: inherit;width:100%;">
+							<header style="color: black;font-size: xx-large;font-family: mainBold;">About Me</header>
+							<div style="    display: -webkit-box;" >
+								<div class="content" style="float:left;width:40%">
+								<div id="rg-gallery" class="rg-gallery">
+									<div class="rg-thumbs">
+										<!-- Elastislide Carousel Thumbnail Viewer -->
+										<div class="es-carousel-wrapper">
+											<div class="es-nav">
+												<span class="es-nav-prev">Previous</span>
+												<span class="es-nav-next">Next</span>
+											</div>
+											<div class="es-carousel">
+												<ul>
+													<li><a href="#"><img src="assets/images/aboutme_bcbs.jpg" data-large="assets/images/aboutme_bcbs.jpg" alt="image01" data-description="Bishop Cotton Boys School" /></a></li>
+													<li><a href="#"><img src="assets/images/aboutme_bmsit.jpg" data-large="assets/images/aboutme_bmsit.jpg" alt="image01" data-description="BMS Institute of Technology" /></a></li>
+													<li><a href="#"><img src="assets/images/aboutme_sap1.jpg" data-large="assets/images/aboutme_sap1.jpg" alt="image01" data-description="SAP Business Intelligence Application" /></a></li>
+													<li><a href="#"><img src="assets/images/aboutme_sap2.jpg" data-large="assets/images/aboutme_sap2.jpg" alt="image01" data-description="Charting" /></a></li>
+													<li><a href="#"><img src="assets/images/aboutme_sap.png" data-large="assets/images/aboutme_sap.png" alt="image01" data-description="SAP Labs, Bangalore" /></a></li>
+													<li><a href="#"><img src="assets/images/aboutme_usc.jpg" data-large="assets/images/aboutme_usc.jpg" alt="image01" data-description="University of Southern California" /></a></li>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+													
+												</ul>
+											</div>
+										</div>
+										<!-- End Elastislide Carousel Thumbnail Viewer -->
+									</div><!-- rg-thumbs -->
+								</div><!-- rg-gallery -->
+								</div><!-- content -->
+								<div style="padding-left:6%;width:50%; color:currentColor; font-size:larger">
+									<p> I am studying at the University of Southern California, which is in Los Angeles, California. I am pursuing my Masters in Computer Science, and am currently looking for internship opportunities for Summer, 2018.
+								</div>
+							</div>
 
 
-							<p>Im just a regular guy, trying to make the most of this journey.</p>
 
 						</div>
 					</section>
 
 				<!-- Contact -->
-					<section id="contact" class="four">
+					<section id="contact" class="four" style="background-image:url(images/c1.jpeg);">
 						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
+							<h2 style="font-family:mainBold;color:aliceblue;font-size:-webkit-xxx-large;margin-bottom:1em">Contact me</h2>
+							<div id = "iconContainer">
+            
+					            <a title="LinkedIn" style="margin-left: 10px;"data-toggle="tooltip" data-placement="bottom"  href="https://www.linkedin.com/in/karan-balakrishnan-5b155582/"><img src="assets/images/Li.png" style="vertical-align:top"></a>
+					            <a title="Facebook" style="margin-left: 2px;"data-toggle="tooltip" data-placement="bottom"  href="https://www.facebook.com/karan.b7"><img src="assets/images/fb.png" style="vertical-align:top;width:64px;"></a>
+					            <a title="Github" style="margin-left: 14px;"data-toggle="tooltip" data-placement="bottom"  href="https://github.com/hitmank/"><img id="gitImg"src="assets/images/b.png" style="vertical-align:top;margin-left:7px"></a>
+					            <a title="Email" style="margin-left: 7px;"data-toggle="tooltip" data-placement="bottom"  href="mailto:karan.b755@gmail.com?Subject=Hello"><i class="material-icons customIconStyle">email</i></a>
+					            <a id="iosIcon" title="iOS" data-toggle="tooltip" data-placement="bottom"  href="www.facebook.com"><img src="assets/images/xcode.png" style="vertical-align:top;width:77px;"></a>
+					        </div>
+					          <div id = "mapContainer" style="height:250px">
+					            <iframe src="https://snazzymaps.com/embed/8241" width="100%" height="100%" style="border:none;"></iframe>
+					          </div>							
 						</div>
 					</section>
 
@@ -369,9 +420,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<script src="assets/js/main.js"></script>
             <script src="assets/js/classie.js"></script>
             <script src="assets/js/tiltSlider.js"></script>
+
         <script>
 			new TiltSlider( document.getElementById( 'slideshow' ) );
 		</script>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="assets/js/gallery.js"></script>
+
 		<!-- For the demo ad only -->   
 <!--		<script src="http://tympanus.net/codrops/adpacks/demoad.js"></script>-->
 
